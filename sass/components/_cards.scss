@@ -1,0 +1,45 @@
+.card {
+  width: 100%;
+  font-weight: 500;
+  border-radius: 12px;
+  box-shadow: $shadow-primary;
+}
+
+.restaurant-card {
+  height: 200px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  background-color: $colour-white;
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0 20px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    span {
+      font-weight: 300;
+      color: $colour-mid-grey;
+    }
+
+    .fa-regular {
+      font-size: 20px;
+      color: $colour-mid-grey;
+    }
+  }
+}

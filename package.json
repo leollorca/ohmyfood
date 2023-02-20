@@ -1,0 +1,18 @@
+{
+   "scripts": {
+      "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/leollorca/ohmyfood.git"
+   },
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/leollorca/ohmyfood/issues"
+   },
+   "homepage": "https://github.com/leollorca/ohmyfood#readme",
+   "dependencies": {
+      "sass": "^1.58.1"
+   }
+}

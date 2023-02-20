@@ -1,0 +1,64 @@
+.location {
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 500;
+  background-color: $colour-grey;
+
+  &__icon {
+    margin-right: 16px;
+  }
+}
+
+.book {
+  &__paragraph {
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    @include btn;
+  }
+}
+
+.how {
+  ol {
+    padding-left: 11px;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 20px;
+    background-color: $colour-light-grey;
+
+    &__content {
+      position: relative;
+      left: -11px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 22px;
+        height: 22px;
+        color: $colour-white;
+        font-size: 12px;
+        font-weight: 300;
+        border-radius: 50px;
+        background-color: $colour-primary;
+      }
+
+      .fa-solid {
+        color: $colour-mid-grey;
+      }
+
+      h3 {
+        display: inline;
+        font-size: 14px;
+      }
+    }
+  }
+}
