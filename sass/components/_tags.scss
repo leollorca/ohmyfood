@@ -1,0 +1,11 @@
+.new-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  @include inline-flex-centered;
+  padding: 6px 8px;
+  font-size: 10px;
+  color: $colour-dark-green;
+  border-radius: 2px;
+  background-color: $colour-green;
+}
