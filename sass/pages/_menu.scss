@@ -1,0 +1,87 @@
+body {
+  background-color: $colour-light-grey;
+}
+
+.main-restaurant-img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.menu {
+  position: relative;
+  top: -32px;
+  padding: 20px 20px 18px 20px;
+  text-align: center;
+  border-radius: 32px 32px 0 0;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+
+    .fa-regular {
+      font-size: 22px;
+      color: $colour-mid-grey;
+    }
+  }
+
+  &__btn {
+    @include btn;
+    margin-top: 50px;
+  }
+}
+
+.menu-category {
+
+  @include flex-column;
+  gap: 20px;
+  text-align: left;
+
+  &__heading {
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 34px;
+      height: 2px;
+      margin-top: 4px;
+      background-color: $colour-green;
+    }
+  }
+
+  &__card {
+    @include flex-centered;
+    padding: 20px;
+
+    &--wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      h3 {
+        margin-bottom: 4px;
+        font-size: 14px;
+        font-weight: 500;
+
+        & + div {
+          font-size: 12px;
+          font-weight: 300;
+        }
+      }
+
+      .price {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+      }
+    }
+  }
+}
