@@ -1,0 +1,4 @@
+@function animation-delay($index) {
+  $delay: 0.2s;
+  @return $delay * ($index - 1);
+}   
