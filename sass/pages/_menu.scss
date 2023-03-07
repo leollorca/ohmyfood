@@ -34,8 +34,7 @@ body {
   }
 }
 
-.menu-category {
-
+.menu-content {
   @include flex-column;
   gap: 20px;
   text-align: left;
@@ -58,29 +57,90 @@ body {
 
   &__card {
     @include flex-centered;
-    padding: 20px;
+    height: 60px;
+    padding-left: 20px;
+    background-color: $colour-white;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: card-reveal .5s forwards;
+
+    $count: 13;
+    @for $i from 1 through $count {
+      @if $i != 1 or $i != 5 or $i != 9 {
+        &:nth-child(#{$i}) {
+          animation-delay: animation-delay($i);
+        }
+      } @else {
+
+      }
+  }
+
+    &:hover {
+      .menu-content__card--wrapper {
+        width: calc(100% - 60px);
+      }
+
+      .check-box {
+        width: 60px;
+        transform: translateX(0);
+
+        .fa-solid {
+          animation: check-icon .5s forwards;
+        }
+      }
+    }
 
     &--wrapper {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+      transition: .5s;
 
-      h3 {
-        margin-bottom: 4px;
-        font-size: 14px;
-        font-weight: 500;
+      .meal {
+        min-width: 0;
 
-        & + div {
+        h3 {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-bottom: 4px;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        div {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
           font-size: 12px;
           font-weight: 300;
         }
       }
-
+      
       .price {
+        padding: 0 20px;
         font-size: 14px;
         font-weight: 500;
-        line-height: 1;
+        transition: .5s;
+      }
+    }
+
+    .check-box {
+      position: relative;
+      @include flex-centered;
+      width: 0;
+      height: 100%;
+      color: $colour-white;
+      border-radius: 0 12px 12px 0;
+      background-color: $colour-green;
+      transform: translateX(60px);
+      transition: .5s;
+
+      .fa-solid {
+        font-size: 20px;
+        transform: rotate(0);
       }
     }
   }
