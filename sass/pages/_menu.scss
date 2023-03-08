@@ -29,7 +29,6 @@ body {
   }
 
   &__btn {
-    @include btn;
     margin-top: 50px;
   }
 }
@@ -67,12 +66,8 @@ body {
 
     $count: 13;
     @for $i from 1 through $count {
-      @if $i != 1 or $i != 5 or $i != 9 {
-        &:nth-child(#{$i}) {
-          animation-delay: animation-delay($i);
-        }
-      } @else {
-
+      &:nth-of-type(#{$i}) {
+        animation-delay: animation-delay($i);
       }
   }
 

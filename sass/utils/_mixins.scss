@@ -25,4 +25,10 @@
   border-radius: 50px;
   background: $gradient;
   box-shadow: $shadow-primary;
+  transition: .2s;
+
+    &:hover {
+        box-shadow: $shadow-hover;
+        background: $gradient-lighter;
+    }
 }

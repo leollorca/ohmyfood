@@ -2,6 +2,15 @@
   padding: 20px;
   background-color: $colour-dark-grey;
 
+  svg {
+    width: 90px;
+    margin-bottom: 10px;
+    
+    path {
+      fill: $colour-white;
+    }
+  }
+
   &__logo {
     width: 30%;
     margin-bottom: 10px;

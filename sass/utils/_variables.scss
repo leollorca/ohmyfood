@@ -10,6 +10,9 @@ $colour-green: #99e2d0;
 $colour-dark-green: #008c69;
 
 $gradient: linear-gradient($colour-secondary, $colour-primary);
+$gradient-lighter: linear-gradient(lighten($colour-secondary, 4%), lighten($colour-primary, 4%));
 
 $shadow-primary: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
   rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+$shadow-hover: rgba(50, 50, 93, 0.5) 0px 16px 30px -8px,
+  rgba(0, 0, 0, 0.5) 0px 11px 19px -11px;

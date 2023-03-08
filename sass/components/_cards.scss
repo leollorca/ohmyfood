@@ -3,6 +3,7 @@
   font-weight: 500;
   border-radius: 12px;
   box-shadow: $shadow-primary;
+  cursor: pointer;
 }
 
 .restaurant-card {
@@ -33,11 +34,6 @@
 
     span {
       font-weight: 300;
-      color: $colour-mid-grey;
-    }
-
-    .fa-regular {
-      font-size: 20px;
       color: $colour-mid-grey;
     }
   }
