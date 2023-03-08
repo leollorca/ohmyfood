@@ -14,10 +14,6 @@
   &__paragraph {
     margin-bottom: 20px;
   }
-
-  &__btn {
-    @include btn;
-  }
 }
 
 .how {
@@ -32,6 +28,7 @@
     align-items: center;
     height: 60px;
     background-color: $colour-light-grey;
+    cursor: default;
 
     &__content {
       position: relative;
