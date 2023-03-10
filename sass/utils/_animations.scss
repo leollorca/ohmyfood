@@ -1,3 +1,40 @@
+@keyframes spinner-background {
+
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+    display: none;
+  }
+}
+
+@keyframes spinner {
+  0% {
+     transform: scale(1) rotate(0deg) translateY(calc(var(--radius) * 1%));
+  }
+
+  50% {
+     transform: scale(0.5) rotate(1440deg) translateY(0);
+  }
+
+  100% {
+     transform: scale(1) rotate(2920deg) translateY(calc(var(--radius) * 1%));
+  }
+}
+
+@keyframes scroll-unlocker {
+
+  0% {
+    overflow: hidden;
+  }
+
+  100% {
+    overflow: visible;
+  }
+}
+
 @keyframes check-icon {
 
   to {

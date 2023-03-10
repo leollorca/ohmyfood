@@ -1,8 +1,9 @@
 .header,
 .header-menu {
+  position: relative;
   @include flex-centered;
   padding: 20px 0;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
   background-color: $colour-white;
 
   a {
@@ -11,6 +12,6 @@
   }
 
   &__logo {
-    width: 40%;
+    width: 140px;
   }
 }
