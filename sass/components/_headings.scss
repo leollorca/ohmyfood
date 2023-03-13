@@ -2,6 +2,16 @@
   margin-bottom: 20px;
   font-size: 22px;
   font-weight: 500;
+
+  @include tablet {
+    width: calc(426px - 40px);
+    margin: 0 auto 20px auto;
+  }
+
+  @include large-tablet {
+    width: calc(768px - 40px);
+    margin: 0 auto 20px auto;
+  }
 }
 
 .menu-heading {

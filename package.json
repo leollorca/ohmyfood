@@ -1,6 +1,7 @@
 {
    "scripts": {
       "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
+
    },
    "repository": {
       "type": "git",

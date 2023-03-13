@@ -15,3 +15,11 @@ $gradient-lighter: linear-gradient(lighten($colour-secondary, 4%), lighten($colo
 $shadow-primary: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 $shadow-hover: rgba(50, 50, 93, 0.5) 0px 16px 30px -8px,
   rgba(0, 0, 0, 0.5) 0px 11px 19px -11px;
+
+$breakpoints: (
+  'tablet': 426px,
+  'large-tablet': 768px,
+  'desktop': 1024px,
+  'large-desktop': 1200px,
+  'xlarge-desktop': 1440px,
+);
