@@ -22,6 +22,16 @@ body {
     align-items: center;
     padding-right: 20px;
 
+    @include tablet {
+      width: calc(426px - 40px);
+      margin: 0 auto;
+    }
+
+    @include large-tablet {
+      width: calc(768px - 40px);
+      margin: 0 auto;
+    }
+
     .fa-regular {
       font-size: 22px;
       color: $colour-mid-grey;
@@ -37,6 +47,16 @@ body {
   @include flex-column;
   gap: 20px;
   text-align: left;
+
+  @include tablet {
+    width: calc(426px - 40px);
+    margin: 0 auto;
+  }
+
+  @include large-tablet {
+    width: calc(768px - 40px);
+    margin: 0 auto;
+  }
 
   &__heading {
     margin-top: 40px;

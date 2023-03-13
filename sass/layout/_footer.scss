@@ -2,39 +2,51 @@
   padding: 20px;
   background-color: $colour-dark-grey;
 
-  svg {
-    width: 90px;
-    margin-bottom: 10px;
-    
-    path {
-      fill: $colour-white;
+  &__content {
+    @include tablet {
+      width: calc(426px - 40px);
+      margin: 0 auto;
     }
-  }
 
-  &__logo {
-    width: 30%;
-    margin-bottom: 10px;
-  }
-
-  ul {
-    @include flex-column;
-    gap: 6px;
-  }
-
-  &__link {
-    font-size: 12px;
-
-    a {
-      color: $colour-white;
-      text-decoration: none;
+    @include large-tablet {
+      width: calc(768px - 40px);
+      margin: 0 auto;
     }
-  }
 
-  &__link--bold {
-    font-weight: 500;
-  }
-
-  .fa-solid {
-    width: 20px;
+    svg {
+      width: 90px;
+      margin-bottom: 10px;
+      
+      path {
+        fill: $colour-white;
+      }
+    }
+  
+    &__logo {
+      width: 30%;
+      margin-bottom: 10px;
+    }
+  
+    ul {
+      @include flex-column;
+      gap: 6px;
+    }
+  
+    &__link {
+      font-size: 12px;
+  
+      a {
+        color: $colour-white;
+        text-decoration: none;
+      }
+    }
+  
+    &__link--bold {
+      font-weight: 500;
+    }
+  
+    .fa-solid {
+      width: 20px;
+    }
   }
 }

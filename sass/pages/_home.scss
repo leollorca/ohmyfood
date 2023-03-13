@@ -30,6 +30,16 @@
     background-color: $colour-light-grey;
     cursor: default;
 
+    @include tablet {
+      width: calc(426px - 40px);
+      margin: 0 auto;
+    }
+
+    @include large-tablet {
+      width: calc(768px - 40px);
+      margin: 0 auto;
+    }
+
     &__content {
       position: relative;
       left: -11px;
@@ -63,4 +73,16 @@
 .restaurants {
   @include flex-column;
   gap: 20px;
+
+  @include tablet {
+    width: calc(426px - 40px);
+    margin: 0 auto;
+  }
+
+  @include large-tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(768px - 40px);
+    margin: 0 auto;
+  }
 }

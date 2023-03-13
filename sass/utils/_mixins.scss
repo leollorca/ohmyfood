@@ -32,3 +32,33 @@
         background: $gradient-lighter;
     }
 }
+
+@mixin tablet {
+  @media (min-width: map-get($breakpoints, 'tablet')) {
+    @content;
+  }
+}
+
+@mixin large-tablet {
+  @media (min-width: map-get($breakpoints, 'large-tablet')) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media screen and (min-width: map-get($breakpoints, 'large-desktop')) {
+    @content;
+  }
+}
+
+@mixin xlarge-desktop {
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    @content;
+  }
+}
